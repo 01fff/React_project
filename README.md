@@ -1,46 +1,39 @@
 # HortiFácil App
 
-Este projeto é um aplicativo de hortifruti desenvolvido em React Native + Expo. Abaixo estão listados os componentes principais utilizados.
+This project is a fresh produce mobile app developed with React Native + Expo. Below are the main components used.
 
-## Componentes React Native
+## React Native Components
+SafeAreaView (react-native-safe-area-context): Safe area support for iOS/Android.
+View: Generic layout container.
+Text: Text display.
+TextInput: Text input fields (email, password, address, etc.).
+TouchableOpacity: Buttons and clickable areas.
+Image: Image display (logos, products, placeholders).
+FlatList: Efficient item listing (stores, products, addresses, cart).
+ScrollView: Vertical scrolling for screens such as Profile.
+Switch: Toggle state (e.g. address without number).
+Alert: Display alerts/confirmation and error modals.
 
-- **SafeAreaView** (`react-native-safe-area-context`): Área segura para iOS/Android.
-- **View**: Container genérico para layout.
-- **Text**: Exibição de textos.
-- **TextInput**: Campos de entrada de texto (e-mail, senha, endereço etc.).
-- **TouchableOpacity**: Botões e áreas clicáveis.
-- **Image**: Exibição de imagens (logos, produtos, placeholder).
-- **FlatList**: Listagem eficiente de itens (lojas, produtos, endereços, carrinho).
-- **ScrollView**: Rolagem vertical para telas como Perfil.
-- **Switch**: Alternar estado (ex: endereço sem número).
-- **Alert**: Exibir alertas/modal de confirmação e erro.
+## Navigation Components
+NavigationContainer (@react-navigation/native): Navigation container.
+createNativeStackNavigator (@react-navigation/native-stack): Screen stack (Login, Signup, Store, etc.).
+createBottomTabNavigator (@react-navigation/bottom-tabs): Main tabs (Stores, Cart, Profile).
 
-## Componentes de Navegação
+## React Hooks
+useState: Local state inside components.
+useContext: Consumes the cart context.
+createContext: Creates the CartContext.
+useMemo: Memoizes the filtered product list.
 
-- **NavigationContainer** (`@react-navigation/native`): Container de navegação.
-- **createNativeStackNavigator** (`@react-navigation/native-stack`): Pilha de telas (Login, Signup, Store, etc.).
-- **createBottomTabNavigator** (`@react-navigation/bottom-tabs`): Abas principais (Lojas, Carrinho, Perfil).
-
-## Hooks React
-
-- **useState**: Estado local dentro dos componentes.
-- **useContext**: Consumo de contexto de carrinho.
-- **createContext**: Criação do `CartContext`.
-- **useMemo**: Memorizar lista filtrada de produtos.
-
-## Gerenciamento de Estado
-
-- **CartContext**: Contexto próprio para gerenciar itens do carrinho, políticas de entrega, adicionar/remover produtos.
-
-## Bibliotecas Extras
-
-- **@expo/vector-icons**: Ícones (`Feather`, `FontAwesome`, `MaterialCommunityIcons`).
-- **react-native-qrcode-svg**: Geração de QR Code para Pix.
-
+## tate Management
+CartContext: Custom context used to manage cart items, delivery policies, and add/remove products.
+## Extra Libraries
+@expo/vector-icons: Icons (Feather, FontAwesome, MaterialCommunityIcons).
+react-native-qrcode-svg: QR code generation for Pix payments.
 ---
 
    ## Integrantes
-   Gabriel Alves Queiroz Silva, Samuel de Lira Mendonça, Leandro de Souza Farias, Ademar Neto Seabra Fonseca e Felipe Olimpio Fonseca.
+   Felipe Olimpio Fonseca.
 
 ### Como rodar
 
